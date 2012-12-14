@@ -9,6 +9,10 @@
   "dependencies": {
     "request": "2.9.153"
   },
+  "repository": { 
+    "type": "git",
+    "url": "https://github.com/silentrob/node-intercom.git"
+  },
   "author": "Rob Ellis",
   "main": "./intercom.js",
   "licenses" : [
