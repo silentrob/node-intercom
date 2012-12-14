@@ -1,0 +1,20 @@
+{
+  "name": "node-intercom",
+  "version": "0.0.1",
+  "description": "intercom.io interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "request": "2.9.153"
+  },
+  "author": "Rob Ellis",
+  "main": "./intercom.js",
+  "licenses" : [
+    { 
+      "type" : "MIT",
+      "url" : "https://raw.github.com/sintaxi/node-dbox/master/README.md"
+    }
+  ]
+}
