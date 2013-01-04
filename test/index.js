@@ -1,4 +1,9 @@
-var io = require("../intercom").app();
+var settings = {
+  "API_KEY": "your_API_key",
+  "APP_ID": "your_APP_ID"
+}
+
+var io = require("../intercom").app(settings);
 
 
 io.users.all(function(code, body){

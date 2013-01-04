@@ -12,7 +12,7 @@ information...
       "name": "yourapplication",
       "version": "0.1.0",
       "dependencies": {
-        "node-intercom": "0.0.1"
+        "node-intercom": "0.0.2"
       }
     }
 
@@ -27,7 +27,12 @@ OR, if you just want to start playing with the library run...
     
 ## API Overview
 
-    var intercom = require('intercom').app();
+    var settings = {
+      "API_KEY": "your_API_key",
+      "APP_ID": "your_APP_ID"
+    }
+
+    var intercom = require('node-intercom').app(settings);
 
     intercom.users.get('test@example.com',function(code, body){
       

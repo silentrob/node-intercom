@@ -21,12 +21,13 @@ var set_args = function (options, args) {
 };
 
 
-var sign = function() {
-  var config = require("./config/settings");
-  return "Basic " + new Buffer(config.APP_ID + ":" + config.API_KEY).toString("base64");
-}
 
 exports.app = function(config) {
+
+  var sign = function() {
+    return "Basic " + new Buffer(config.APP_ID + ":" + config.API_KEY).toString("base64");
+  }
+
   return {
     users: {
       all: function(args, cb) {
