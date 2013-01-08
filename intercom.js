@@ -73,7 +73,7 @@ exports.app = function(config) {
           "method": "POST",
           "url": "https://api.intercom.io/v1/users/",
           "headers": { "Authorization": sign() },
-          "body": qs.stringify(data)
+          "body": JSON.stringify(data)
         }
 
         return request(args, function(e, r, body) {
@@ -90,7 +90,7 @@ exports.app = function(config) {
           "method": "PUT",
           "url": "https://api.intercom.io/v1/users/",
           "headers": { "Authorization": sign() },
-          "body": qs.stringify(data)
+          "body": JSON.stringify(data)
         }
 
         return request(args, function(e, r, body) {
