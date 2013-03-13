@@ -48,14 +48,13 @@ exports.app = function(config) {
         });
       },
      
-      get: function(email,cb) {
-        this.getByEmail(email,cb);
-      },
-     
-      getByEmail: function(email, cb) {
+      get: function(user_id_or_email, cb) {
+        
+        var key = (user_id_or_email.indexOf("@") == -1) ? "user_id" : "email";
+
         var args = {
           "method": "GET",
-          "url": "https://api.intercom.io/v1/users/?email=" + email,
+          "url": "https://api.intercom.io/v1/users/?"+ key + "=" + user_id_or_email,
           "headers": { "Authorization": sign() } 
         }
 
