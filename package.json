@@ -1,6 +1,6 @@
 {
   "name": "node-intercom",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "intercom.io interface",
   "main": "index.js",
   "scripts": {
