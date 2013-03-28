@@ -71,7 +71,7 @@ exports.app = function(config) {
         var args = {
           "method": "POST",
           "url": "https://api.intercom.io/v1/users/",
-          "headers": { "Authorization": sign() },
+          "headers": { "Authorization": sign(), 'Content-Type': 'application/json' },
           "body": JSON.stringify(data)
         }
 
@@ -88,7 +88,7 @@ exports.app = function(config) {
         var args = {
           "method": "PUT",
           "url": "https://api.intercom.io/v1/users/",
-          "headers": { "Authorization": sign() },
+          "headers": { "Authorization": sign(), 'Content-Type': 'application/json' },
           "body": JSON.stringify(data)
         }
 
